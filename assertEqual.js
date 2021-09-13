@@ -14,3 +14,4 @@ assertEqual(123,123);
 assertEqual("crust", "crust");
 assertEqual("@", "@");
 assertEqual("Campagnolo", "Shimano");
+assertEqual("Campagnolo2", "Shimano1");
