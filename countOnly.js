@@ -8,27 +8,27 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//allItems: an array of strings that we need to look through 
-//itemsToCount: an object specifying what to count 
+//allItems: an array of strings that we need to look through
+//itemsToCount: an object specifying what to count
 
 
-
-const countOnly = function(allItems, itemsToCount){
+const countOnly = function(allItems, itemsToCount) {
   //console.log(itemsToCount['Agouhanna']);
   let namesCounted = {};
-  for(const item of allItems){
-    if(itemsToCount[item]){
-      if(namesCounted[item]){
+  for (const item of allItems) {
+    if (itemsToCount[item]) {
+      if (namesCounted[item]) {
         namesCounted[item] += 1;
-      }else{
+      } else {
         namesCounted[item] = 1;
       }
     }
     
     
   }
+  console.log(namesCounted);
   return namesCounted;
-}
+};
 
 
 const firstNames = [
