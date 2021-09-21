@@ -9,9 +9,8 @@ const letterPositions = function(sentence) {
     }
     result[letter].push(i);
   }
-  console.log(result);
+  return result;
 
 };
 
-let sentence = "lighthouse in the house";
-letterPositions(sentence);
+module.exports = letterPositions;
